@@ -1,0 +1,39 @@
+\documentclass[11pt, a4paper]{article}
+
+\usepackage[style=ieee, backend=biber]{biblatex}
+\usepackage{graphicx}
+\addbibresource{references.bib} 
+
+% Required packages
+\usepackage[a4paper, margin=2.5cm]{geometry}
+\usepackage[english, provide=*]{babel}
+\babelprovide[import, onchar=ids fonts]{english}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage{pdfpages} 
+
+% Document Info
+\title{\textbf{Merton Council} \\ \Large Parking Suspensions}
+\author{Joe Makarski, Omar Al-Mizan, Luqman Abid}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\input{ai-declaration}
+
+\include{introduction}
+
+\include{background}
+
+\include{literature-review}
+
+\include{design-asset}
+
+\include{contract}
+
+\printbibliography
+\end{document}
